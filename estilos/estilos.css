@@ -47,6 +47,11 @@ font-family: 'Prompt', sans-serif;*/
     margin: top 5px !important;
 }
 
+.navbar-nav {
+    z-index: 100;
+}
+
+
 /* ----------------------------------BOTONES E INICIO-------------------------------------------------------*/
 .collapse {
     display: flex;
@@ -193,6 +198,30 @@ iframe {
     height: 200px;
 }
 
+/* -------------------------------------------------MEDIAS QUERIES ----------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width:480px) {
+
+    .container-fluid {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+
+    }
+
+    .container-fluid img {
+        width: 200px;
+        height: auto;
+    }
+
+    .button.navbar-toggler button {
+        float: right;
+        margin-top: 0%;
+
+    }
+}
+
+/* ----------------------------------------------FOOTER------------------------------------------------------- */
+
 footer {
     background-color: #080d07;
     font-size: 20px;
@@ -222,21 +251,24 @@ footer p {
     position: fixed;
     right: 48px;
     bottom: 48px;
-    text-align: center;
+    text-align: center !important;
     line-height: 40px;
     font-size: 30px;
     box-shadow: 0 0 5px #fff;
 }
 
-.carousel-inner {
+/*-------------------------------------------------- CARRUSEL-------------------------------------------------------- */
+
+.carousel-inner button {
     height: 650px;
     margin-bottom: 0%;
     padding-bottom: 0%;
     line-height: 0%;
-    
 }
+
+
 @media only screen and (min-width: 480px) {
-    .carousel-indicators{
+    .carousel-indicators {
         margin-bottom: 0%;
         padding-bottom: 0%;
 
@@ -252,7 +284,7 @@ section {
 /* -----------------------------------------------SHOP ---------------------------------------------------------------*/
 .shopcard {
     width: 250px;
-    height: auto;
+    height: 400px;
     background-color: #fff;
     color: #080d07;
     padding: 20px;
@@ -260,15 +292,20 @@ section {
     margin-bottom: 20px;
     margin-top: 20px;
     border: #a62f24 solid 2px;
+
 }
 
-/* /* @media only screen and (max-width: 780px) {
+@media only screen and (min-width: 480px) {
     .shopcard {
-       flex-direction: row;
-    
+        float: left;
+        justify-content: space-between 20px;
+        align-content: space-around 20px;
+        margin: 30px;
+        padding: 20px;
+        gap: 20px;
+    }
+}
 
-        
-}   */
 .shopcard__img1 {
     background-image: url(../multimedia/bidoneshop.png);
     height: 200px;
@@ -335,6 +372,7 @@ section {
 .juanabella {
     display: flex;
     flex-wrap: wrap;
+    background-color: #92A693;
 }
 
 .nleftjuan {
@@ -344,6 +382,7 @@ section {
     min-height: 440px;
     background-size: cover;
     background-position: center;
+
 }
 
 .nrightjuan {
@@ -367,6 +406,7 @@ section {
 .juanotero {
     display: flex;
     flex-wrap: wrap;
+    background-color: #92A693;
 }
 
 .nleftotero {
@@ -394,7 +434,7 @@ section {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.fletter::first-letter{
+.fletter::first-letter {
     font-family: 'Racing Sans One', cursive;
     color: #a62f24;
     font-size: 35px;
@@ -437,11 +477,86 @@ section {
         font-size: 25px;
     }
 }
+
 /* ----------------------------------------PREGUNTAS FRECUENTES----------------------------------------------- */
-.card-header{
+.card-header {
     font-family: 'Racing Sans One', cursive;
 }
-.card-body{
+
+.card-body {
     font-family: 'Familjen Grotesk', sans-serif;
 
+}
+
+/*------------------------------------------------------ CONTACTO ------------------------------------------*/
+.contactos {
+    height: 700px;
+    width: auto;
+    background-image: url(../multimedia/etiquetanueva.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0%;
+    padding: 0%;
+
+
+
+}
+
+
+.contactos i {
+    font-size: 60px;
+    color: #a62f24 !important;
+    justify-content: space-between 20px;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 25px;
+    margin-left: 100px;
+}
+
+h3 {
+    font-family: 'Racing Sans One', cursive;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+
+.formulario {
+    background-color: #92A693;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*------------------------------- MEDIAS QUERIES DE CONTACTOS ---------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width:480px) {
+    .contactos {
+        height: 180px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .contactos i {
+        font-size: 30px;
+        justify-content: space-between 10px;
+        letter-spacing: 10px;
+        margin-left: 20px;
+    }
+
+    .formulario {
+        background-color: #92A693;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .contactos {
+        height: 700px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .formulario {
+        background-color: #92A693;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
 }
