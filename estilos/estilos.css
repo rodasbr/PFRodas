@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento&family=PT+Sans+Narrow&family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Fondamento&family=PT+Sans+Narrow&family=Prompt:ital@1&family=Racing+Sans+One&display=swap');
+
+/*font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Racing Sans One', cursive;
+font-family: 'Fondamento', cursive;
+font-family: 'Familjen Grotesk', sans-serif;
+font-family: 'Prompt', sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------------------------------HEADER ----------------------------------------------------*/
+.navbar {
+    background-color: #92A693 !important;
+    height: 60px;
+    font-family: 'Prompt', sans-serif;
+    background-image: none;
+
+}
+
+.nav-link {
+    color: #080d07 !important;
+    padding-left: 15px !important;
+    background-color: #92A693 !important;
+}
+
+.container-fluid .logo {
+    padding-left: 12px;
+
+}
+
+.nav-link:hover {
+    color: #a62f24 !important;
+}
+
+.navbar-toggler i {
+    color: #080d07;
+}
+
+.logo {
+    float: left;
+    padding: 5px;
+    margin: top 5px !important;
+}
+
+/* ----------------------------------BOTONES E INICIO-------------------------------------------------------*/
+.collapse {
+    display: flex;
+    justify-content: end;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.barra a:hover {
+    color: #fff;
+}
+
+nav {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../multimedia/bidones.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 0%;
+}
+
+.cuadro {
+    color: #080d07;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.562);
+    border: 1px solid #a62f24;
+    float: right;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Prompt', sans-serif;
+    font-size: 17px;
+
+}
+
+h1 {
+    color: #a62f24;
+    margin-bottom: 10px;
+    font-family: 'Racing Sans One', cursive;
+    font-weight: 700;
+
+}
+
+.cuadro a {
+
+    color: #fff;
+    background-color: #a62f24;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.cuadro p {
+    margin-bottom: 20px;
+
+}
+
+.cuadro a:hover {
+    color: #080d07;
+}
+
+h2 {
+    text-align: center;
+    background-color: #a62f24;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 0%;
+    font-size: 25px;
+    font-family: 'Racing Sans One', cursive;
+    text-transform: uppercase;
+}
+
+.donde {
+    height: 700px;
+    background-color: #92A693;
+    padding-left: 20px;
+}
+
+.sec1 {
+    background-color: #92A693;
+    height: 700;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    padding: 20px;
+    gap: 20px;
+
+
+}
+
+.caja {
+    height: 450px;
+    width: 300px;
+    background-color: #a62f24;
+    color: #fff;
+    border-color: 3px #080d07;
+    text-align: center;
+    line-height: 120px;
+    text-align: justify;
+    border: 2px #080d07 solid;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 20px;
+    text-align-last: center;
+    border-radius: 10px;
+
+}
+
+.redesadri {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.redespico {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.redeswilde {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+.redesautodromo {
+    color: #fff;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 50px;
+    font-size: 25px;
+}
+
+iframe {
+    width: 280px;
+    height: 200px;
+}
+
+footer {
+    background-color: #080d07;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #a62f24;
+    font-size: 40px;
+
+}
+
+footer i {
+    letter-spacing: 25px;
+}
+
+footer p {
+    color: #fff;
+}
+
+.subir {
+    background-color: #a62f24;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    right: 48px;
+    bottom: 48px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    box-shadow: 0 0 5px #fff;
+}
+
+.carousel-inner {
+    height: 650px;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    line-height: 0%;
+    
+}
+@media only screen and (min-width: 480px) {
+    .carousel-indicators{
+        margin-bottom: 0%;
+        padding-bottom: 0%;
+
+    }
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #92A693;
+}
+
+/* -----------------------------------------------SHOP ---------------------------------------------------------------*/
+.shopcard {
+    width: 250px;
+    height: auto;
+    background-color: #fff;
+    color: #080d07;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: #a62f24 solid 2px;
+}
+
+/* /* @media only screen and (max-width: 780px) {
+    .shopcard {
+       flex-direction: row;
+    
+
+        
+}   */
+.shopcard__img1 {
+    background-image: url(../multimedia/bidoneshop.png);
+    height: 200px;
+    background-size: cover;
+}
+
+.shopcard__img2 {
+    background-image: url(../multimedia/remera.jpg);
+    height: 200px;
+    background-size: cover;
+}
+
+.shopcard__img3 {
+    background-image: url(../multimedia/calcos.jpg);
+    height: 200px;
+    background-size: cover;
+}
+
+.shopcard__img4 {
+    background-image: url(../multimedia/buzoprovisorio.jpg);
+    height: 200px;
+    background-size: cover;
+}
+
+.shopcard__img5 {
+    background-image: url(../multimedia/bandera.jpg);
+    height: 200px;
+    background-size: cover;
+}
+
+.shopcard__img6 {
+    background-image: url(../multimedia/llaveros.jpg);
+    height: 200px;
+    background-size: cover;
+}
+
+.shopcard__tittle {
+    color: #a62f24;
+    font-size: 30px;
+}
+
+.shopcard__boton {
+    color: #080d07;
+    background-color: #a62f24;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-bottom: 10px;
+}
+
+/*------------------------------------------------------------- TITTLES -----------------------------------*/
+
+.tittle {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 0px;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+
+/* ----------------------------------------- ABOUT US ------------------------------------------------------------*/
+
+/* -----------------------------------------------JUAN ABELLA ---------------------------------------------------*/
+.juanabella {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nleftjuan {
+    margin-top: 20px;
+    width: 100%;
+    background-image: url(../multimedia/bolitadenoche.jpg);
+    min-height: 440px;
+    background-size: cover;
+    background-position: center;
+}
+
+.nrightjuan {
+    width: 90%;
+    padding: 20px;
+}
+
+.nrightjuan h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #a62f24;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.nrightjuan p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* -----------------------------------------------JUAN OTERO ---------------------------------------------------*/
+
+.juanotero {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nleftotero {
+    margin-top: 20px;
+    width: 100%;
+    background-image: url(../multimedia/oterouno.jpg);
+    min-height: 440px;
+    background-size: cover;
+    background-position: center;
+}
+
+.nrightotero {
+    width: 90%;
+    padding: 20px;
+}
+
+.nrightotero h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #a62f24;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.nrightotero p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fletter::first-letter{
+    font-family: 'Racing Sans One', cursive;
+    color: #a62f24;
+    font-size: 35px;
+}
+
+/* ----------------------------------------------MEDIAS QUERIES ---------------------------------------------------*/
+
+@media only screen and (min-width: 480px) {
+    .juanabella .nleftjuan {
+        width: 45%;
+    }
+
+    .juanabella .nleftjuan {
+        font-size: 35%;
+    }
+
+    .juanabella .nrightjuan {
+        width: 55%;
+    }
+
+    .juanotero .nleftotero {
+        width: 45%;
+    }
+
+    .juanotero .nleftotero {
+        font-size: 35%;
+    }
+
+    .juanotero .nrightotero {
+        width: 55%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .juanabella .nrightjuan p {
+        font-size: 25px;
+    }
+
+    .juanotero .nrightotero p {
+        font-size: 25px;
+    }
+}
+/* ----------------------------------------PREGUNTAS FRECUENTES----------------------------------------------- */
+.card-header{
+    font-family: 'Racing Sans One', cursive;
+}
+.card-body{
+    font-family: 'Familjen Grotesk', sans-serif;
+
+}
