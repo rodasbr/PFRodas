@@ -52,8 +52,6 @@ header {
         background-color: $color2 !important;
     }
 
-
-
     .nav-link:hover {
         color: $color1 !important;
     }
@@ -223,6 +221,8 @@ main {
 
     }
 
+}
+
     nav {
 
         h1 {
@@ -232,13 +232,14 @@ main {
         p {
             font-size: $xs;
         }
+        
     }
+    
 
     h2#donde {
         font-size: $small;
         padding-top: 30px;
     }
-}
 
 //FOOTER
 footer {
@@ -297,6 +298,7 @@ footer i:hover {
 
         .redes i {
             font-size: $small;
+            text-align: center;
         }
     }
 
@@ -637,6 +639,11 @@ main {
         color: $color3 !important;
     }
 
+    .card-header{
+        height: 80px;
+    }
+
+
     @media only screen and (min-width: 320px) and (max-width:480px) {
 
         .contactos {
@@ -688,7 +695,6 @@ main {
         color: $color1;
         border-color: $color1 solid;
 
-
         input {
             background-color: $color2;
             color: $color3;
@@ -698,7 +704,6 @@ main {
             background-color: $color2;
             border-color: $color1;
         }
-
 
         textarea {
             background-color: $color2;
@@ -729,7 +734,6 @@ main {
     }
 }
 
-
 section {
     article {
 
@@ -753,7 +757,6 @@ section {
             margin: 40px;
 
         }
-
 
         @each $galeriacontacto in uno, dos, tres, cuatro {
             .#{$galeriacontacto}-icon {

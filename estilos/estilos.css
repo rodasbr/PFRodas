@@ -156,17 +156,19 @@ main iframe {
     float: right !important;
     margin-top: 0%;
   }
-  nav h1 {
-    font-size: 20px;
-  }
-  nav p {
-    font-size: 16px;
-  }
-  h2#donde {
-    font-size: 20px;
-    padding-top: 30px;
-  }
 }
+nav h1 {
+  font-size: 20px;
+}
+nav p {
+  font-size: 16px;
+}
+
+h2#donde {
+  font-size: 20px;
+  padding-top: 30px;
+}
+
 footer {
   background-color: #191919;
   font-size: 20px;
@@ -219,6 +221,7 @@ footer i:hover {
   }
   footer .redes i {
     font-size: 20px;
+    text-align: center;
   }
   .subir {
     height: 30px;
@@ -485,6 +488,9 @@ main .contactos i {
 }
 main .contactos i:hover {
   color: #fff !important;
+}
+main .card-header {
+  height: 80px;
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   main .contactos {
