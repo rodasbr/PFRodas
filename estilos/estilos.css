@@ -65,11 +65,12 @@ main .cuadro {
   font-family: "Prompt", sans-serif;
   font-size: 16px;
 }
-main h1 {
+main .cuadro h1 {
   color: #ff0400;
-  margin-bottom: 10px;
   font-family: "Racing Sans One", cursive;
-  font-weight: 700;
+  font-weight: 35px;
+  text-align: left;
+  height: 35px;
 }
 main .cuadro a {
   text-decoration: none;
@@ -79,6 +80,7 @@ main .cuadro a {
   background-image: linear-gradient(to left, #ff0400, #191919);
 }
 main .cuadro p {
+  margin-top: 0px;
   margin-bottom: 20px;
 }
 main .cuadro a:hover {
@@ -115,7 +117,7 @@ main .caja {
   width: 300px;
   background-color: #191919;
   color: #fff;
-  border-color: 3px #ff0400;
+  border-color: 1px #ff0400;
   text-align: center;
   line-height: 120px;
   text-align: justify;
@@ -135,6 +137,12 @@ main .redesautodromo {
   letter-spacing: 10px;
   line-height: 50px;
   font-size: 20px;
+}
+main i {
+  color: #ff0400;
+}
+main i:hover {
+  color: #fff;
 }
 main iframe {
   width: 280px;
@@ -230,11 +238,19 @@ footer i:hover {
     text-align: center;
   }
 }
+.carousel-inner {
+  background-color: #191919;
+}
+
 .carousel-inner button {
   height: 650px;
   margin-bottom: 0%;
   padding-bottom: 0%;
   line-height: 0%;
+}
+
+img.d-block.w-100 {
+  display: block;
 }
 
 @media only screen and (min-width: 480px) {
@@ -244,7 +260,7 @@ footer i:hover {
   }
 }
 /* -----------------------------------------------SHOP ---------------------------------------------------------------*/
-h2 {
+h1 {
   height: 70px;
   text-align: center;
   background-color: #191919;
@@ -254,7 +270,7 @@ h2 {
   text-transform: uppercase;
   margin: 0%;
 }
-h2 .tittle {
+h1 .tittle {
   width: 100%;
   height: 40px;
   margin-bottom: 0px;
@@ -277,6 +293,9 @@ main .shopcard {
   margin-bottom: 20px;
   margin-top: 20px;
   border: #ff0400 solid 2px;
+}
+main h2 {
+  font-family: "Racing Sans One", cursive;
 }
 @media only screen and (min-width: 480px) {
   main .shopcard {
@@ -366,7 +385,7 @@ main .nrightotero {
   width: 90%;
   padding: 20px;
 }
-main .nrightotero h3 {
+main .nrightotero h2 {
   font-size: 35px;
   margin-bottom: 15px;
   color: #ff0400;
@@ -399,7 +418,7 @@ main .nrightjuan {
   width: 90%;
   padding: 20px;
 }
-main .nrightjuan h3 {
+main .nrightjuan h2 {
   font-size: 35px;
   margin-bottom: 15px;
   color: #ff0400;
@@ -411,13 +430,13 @@ main .nrightjuan p {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  main h2 {
+  main h1 {
     font-size: 20px;
   }
-  main .nrightotero h3 {
+  main .nrightotero h2 {
     font-size: 20px;
   }
-  main .nrightjuan h3 {
+  main .nrightjuan h2 {
     font-size: 20px;
   }
 }
@@ -449,7 +468,16 @@ main .nrightjuan p {
     font-size: 16px;
   }
 }
-main #accordion .card-header {
+main .banner-1 {
+  background: url(../multimedia/fondopregfrec.jpg);
+  float: left;
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main .card-header {
   font-family: "Racing Sans One", cursive;
   color: #fff solid !important;
   font-size: 16px;
@@ -457,10 +485,10 @@ main #accordion .card-header {
   border-color: #ff0400 1px solid;
   background-image: linear-gradient(to left, #ff0400, #191919);
 }
-main #accordion .card-header a {
+main .card-header a {
   color: #fff;
 }
-main #accordion .card-body {
+main .card-body {
   font-family: "Familjen Grotesk", sans-serif;
   color: #fff !important;
   background-color: #191919;
@@ -489,12 +517,21 @@ main .contactos i {
 main .contactos i:hover {
   color: #fff !important;
 }
-main .card-header {
-  height: 80px;
-}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .banner-1 {
+    width: 100%;
+    height: 200px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   main .contactos {
-    height: 170px;
+    background-image: url(../multimedia/etiquetanueva.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
     width: auto;
   }
   main .contactos i {
@@ -510,58 +547,62 @@ main .card-header {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
     color: #fff;
   }
+  main .formulario h2 {
+    font-size: 20px !important;
+  }
+  main .card-header {
+    height: 80px;
+  }
 }
 @media only screen and (min-width: 1024px) {
-  main .contactos {
+  .contactos {
     height: 700px;
     width: 100%;
     background-size: cover;
   }
-  main .formulario {
+  .formulario {
     background-color: #191919;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
     color: #fff;
   }
 }
-main h3 {
+h2 {
   font-family: "Racing Sans One", cursive;
   margin-top: 0%;
   padding-top: 0%;
   color: #ff0400;
 }
-main .formulario {
+
+.formulario {
   background-color: #191919;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
   color: #ff0400;
   border-color: #ff0400 solid;
 }
-main .formulario input {
+.formulario input {
   background-color: #191919;
   color: #fff;
 }
-main .formulario .form-check-input {
+.formulario .form-check-input {
   background-color: #191919;
   border-color: #ff0400;
 }
-main .formulario textarea {
+.formulario textarea {
   background-color: #191919;
   color: #fff;
 }
-main .formulario .btn {
+.formulario .btn {
   color: #fff;
   border-radius: 1% #ff0400 1px solid;
   background-color: #191919;
   background-image: linear-gradient(to left, #ff0400, #191919);
 }
-main .formulario .btn:hover {
+.formulario .btn:hover {
   color: #191919;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   h2 {
-    font-size: 20px;
-  }
-  h3 {
     font-size: 20px;
   }
 }
