@@ -66,6 +66,10 @@ header {
         display: flex;
         justify-content: end;
     }
+
+    .navbar-collapse{
+        transition: heigh 0.01ms ;
+    }
 }
 
 main {
@@ -683,8 +687,8 @@ main {
     }
 
     main {
-        .contactos{
-            
+        .contactos {
+
             background-image: url(../multimedia/etiquetanueva.png);
             background-repeat: no-repeat;
             background-size: cover;

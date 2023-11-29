@@ -39,6 +39,9 @@ header .collapse {
   display: flex;
   justify-content: end;
 }
+header .navbar-collapse {
+  transition: heigh 0.01ms;
+}
 
 main html {
   scroll-behavior: smooth;
