@@ -109,6 +109,8 @@ main {
             font-weight: $med;
             text-align: left;
             height: 35px;
+            margin: 5px;
+            padding: 5px;
 
         }
     }
@@ -123,7 +125,8 @@ main {
 
 
     .cuadro p {
-        margin-top: 0px;
+        margin-top: 25px;
+        padding: 10px;
         margin-bottom: 20px;
 
     }
@@ -227,6 +230,11 @@ main {
         float: right !important;
         margin-top: 0%;
 
+    }
+
+    .cuadro h1{
+        margin: 5px;
+        padding: 5px;
     }
 
 }

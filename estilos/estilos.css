@@ -74,6 +74,8 @@ main .cuadro h1 {
   font-weight: 35px;
   text-align: left;
   height: 35px;
+  margin: 5px;
+  padding: 5px;
 }
 main .cuadro a {
   text-decoration: none;
@@ -83,7 +85,8 @@ main .cuadro a {
   background-image: linear-gradient(to left, #ff0400, #191919);
 }
 main .cuadro p {
-  margin-top: 0px;
+  margin-top: 25px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 main .cuadro a:hover {
@@ -166,6 +169,10 @@ main iframe {
   .button.navbar-toggler button {
     float: right !important;
     margin-top: 0%;
+  }
+  .cuadro h1 {
+    margin: 5px;
+    padding: 5px;
   }
 }
 nav h1 {
